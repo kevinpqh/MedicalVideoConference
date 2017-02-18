@@ -1,0 +1,177 @@
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Momentio - single page html template by GraphBerry.com</title>
+	<!-- Load google font -->
+	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	<!-- Load styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons.css" rel="stylesheet">
+	<link href="css/colorbox.css" rel="stylesheet">
+	<!-- Load javascrips libraries-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script src="js/jquery.colorbox.js"></script>
+	
+</head>
+<body>
+	<!-- Offsite canvas navigation start -->
+	<nav class="main-nav">
+		<a href="#" class="close"><i class="icon-cancel"></i></a>
+		<img class="logo" src="images/logo.png" alt="">
+		<!--MENU-->
+		<h2>NAVEGACION</h2>
+		<hr>
+		<ul class="nav nav-pills nav-stacked">
+			<li>
+				<a href="#home" title="Home page">Video Conferencia 1 <i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#service" title="Home page">Video Conferencia 2 <i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#works" title="Home page">Video Conferencia 3<i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#about" title="Home page">Sobre Nosotros <i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#clients" title="Home page">Medicos <i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#price" title="Home page">Precio <i class="icon-angle-right"></i></a>
+			</li>
+			<li>
+				<a href="#contact" title="Home page">contacto <i class="icon-angle-right"></i></a>
+			</li>
+		</ul>
+		<hr>
+		<!--REDES SOCIALES-->
+		<ul class="social">
+			<li class="gplus">
+				<a href="http://goo.gl/r4xzR4"><i class="icon-gplus"></i></a>
+			</li>
+			<li class="dribbble">
+				<a href="http://goo.gl/k9zAy5"><i class="icon-dribbble"></i></a>
+			</li>
+			<li class="twitter">
+				<a href="http://goo.gl/hUfpSB"><i class="icon-twitter"></i></a>
+			</li>
+			<li class="facebook">
+				<a href="goo.gl/RqhEjP">
+					<i class="icon-facebook"></i>
+				</a>
+			</li>
+			<li class="youtube">
+				<a href="#">
+					<i class="icon-youtube"></i>
+				</a>
+			</li>
+			<li class="skype">
+				<a href="#">
+					<i class="icon-skype"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- Offsite canvas navigation end -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-inner">
+			<a href="#" class="navbar-brand">
+				<img src="images/logo.png" alt="Logo" />
+				<!-- This is website logo -->
+			</a>
+			<a href="#" id="nav-expander" class="nav-expander pull-right">Menu
+				<i class="icon-align-justify"></i>
+			</a>
+		</div>
+	</div>
+	
+    <!-- consultas table section start -->
+	<div class="price" id="price">
+		<div class="intro">
+			<div class="title">
+				<h2>Consultas</h2>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="col-sm-4">
+					<div class="pane" id="pane_0">
+                        <input type="text" placeholder="Nickname" id="nick_field" class="form-control">
+                        <br>
+                        <input type="button" value="Set Nickname" id="nick" class="btn btn-info btn-default btn-block">
+                    </div>
+                    <div class="pane" id="pane_1" style="display: none">
+                        <input type="text" placeholder="Chat Room Name" id="room_field" class="form-control">
+                        <br>
+                        <input type="button" value="Join Chat Room" id="join" class="btn btn-info btn-default btn-block">
+                    </div>
+                    <div class="pane" id="pane_2" style="display: none">
+                        <div id="messages_container">
+                    </div>
+                    <p>
+                        <input type="text" placeholder="Message" id="message_field" class="form-control">
+                    </p>
+                    <input type="button" value="Send Message" id="send" disabled class="btn btn-success btn-default btn-block">
+                    <input type="button" value="Quit Chat Room" id="quit" class="btn btn-danger btn-default btn-block">
+      </div>
+				</div>
+				<div class="col-sm-4">
+					
+				</div>
+				<div class="col-sm-4 ">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Contact section end -->
+	<!-- Footer section start -->
+	<!--<div class="footer">
+		<div class="brand"><p>Momentio</p></div>
+		<div class="container">
+			<img class="logo" src="images/footer-logo.png" alt="...">
+			<a href="#" class="toTop">Back to top</a>
+			<p class="copiright">&copy; Copyright 2015 <a target="_blank" href="http://grapberry.com>ref=momentio">. All Rights Reserved.</p>
+		</div>
+	</div>-->
+	<!-- Footer section end -->
+    <script type="text/javascript" src="chat.js">
+  </script>
+  <script type="text/javascript" src="https://api.bistri.com/bistri.conference.min.js">
+  </script>
+<script type="text/javascript">
+
+/*
+ * Show or hide offsite navigation.
+ *
+ */
+$('#nav-expander').on('click', function(e) {
+	e.preventDefault();
+	$('.main-nav').toggleClass('nav-expanded');
+	$('.navbar-default').toggleClass('expanded');
+});
+$('.main-nav .close').on('click', function(e) {
+	e.preventDefault();
+	$('.main-nav').toggleClass('nav-expanded');
+	$('.navbar-default').toggleClass('expanded');
+});
+
+
+</script>
+</body>
+
+</html>
